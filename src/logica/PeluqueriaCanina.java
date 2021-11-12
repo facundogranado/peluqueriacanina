@@ -1,14 +1,16 @@
 package logica;
 
+import igu.Pantalla;
+
+
 public class PeluqueriaCanina {
 
     public static void main(String[] args) {
         
          Controladora control = new Controladora();
-         
-         Cliente cliente0 = new Cliente ("Blanca", "Mestiza", "Blanco", Boolean.TRUE, Boolean.FALSE, "Facundo", "65412", "");
-        
-         control.crearCliente(cliente0);
+         Pantalla pantalla = new Pantalla(control);
+         pantalla.setVisible(true);
+         pantalla.setLocationRelativeTo(null);
     }
     
 }
